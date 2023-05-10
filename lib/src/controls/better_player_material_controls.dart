@@ -368,7 +368,7 @@ class _BetterPlayerMaterialControlsState
     return Container(
       child: Center(
         child: AnimatedOpacity(
-          opacity: controlsNotVisible ? 0.0 : 1.0,
+          opacity: controlsNotVisible ? 0.0 : 0.6,
           duration: _controlsConfiguration.controlsHideTime,
           child: _buildMiddleRow(),
         ),
@@ -428,7 +428,7 @@ class _BetterPlayerMaterialControlsState
     return _buildHitAreaClickableButton(
       icon: Icon(
         _controlsConfiguration.skipBackIcon,
-        size: 24,
+        size: 40,
         color: _controlsConfiguration.iconsColor,
       ),
       onClicked: skipBack,
@@ -439,7 +439,7 @@ class _BetterPlayerMaterialControlsState
     return _buildHitAreaClickableButton(
       icon: Icon(
         _controlsConfiguration.skipForwardIcon,
-        size: 24,
+        size: 40,
         color: _controlsConfiguration.iconsColor,
       ),
       onClicked: skipForward,
@@ -452,14 +452,14 @@ class _BetterPlayerMaterialControlsState
       icon: isFinished
           ? Icon(
               Icons.replay,
-              size: 42,
+              size: 50,
               color: _controlsConfiguration.iconsColor,
             )
           : Icon(
               controller.value.isPlaying
                   ? _controlsConfiguration.pauseIcon
                   : _controlsConfiguration.playIcon,
-              size: 42,
+              size: 50,
               color: _controlsConfiguration.iconsColor,
             ),
       onClicked: () {
@@ -699,7 +699,7 @@ class _BetterPlayerMaterialControlsState
 
   Widget _buildProgressBar() {
     return Expanded(
-      flex: 40,
+      flex: 90,
       child: Container(
         alignment: Alignment.bottomCenter,
         padding: const EdgeInsets.symmetric(horizontal: 12),
