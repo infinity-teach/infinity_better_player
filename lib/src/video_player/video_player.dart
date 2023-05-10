@@ -4,7 +4,6 @@
 
 // Dart imports:
 import 'dart:async';
-import 'dart:developer';
 import 'dart:io';
 import 'package:better_player/src/configuration/better_player_buffering_configuration.dart';
 import 'package:better_player/src/video_player/video_player_platform_interface.dart';
@@ -200,11 +199,11 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
 
   /// Attempts to open the given [dataSource] and load metadata about the video.
   Future<void> _create() async {
-    log("DateTime for  Creating an instance of a video player and returns its textureId: ${DateTime.now()}",name: "TestCreateFunction");
+    // log("DateTime for  Creating an instance of a video player and returns its textureId: ${DateTime.now()}",name: "TestCreateFunction");
     _textureId = await _videoPlayerPlatform.create(
       bufferingConfiguration: bufferingConfiguration,
     );
-    log("DateTime for  finishing  an instance of a video player and returns its textureId: ${DateTime.now()} -- $_textureId",name: "TestCreateFunction");
+    // log("DateTime for  finishing  an instance of a video player and returns its textureId: ${DateTime.now()} -- $_textureId",name: "TestCreateFunction");
 
     _creatingCompleter.complete(null);
 
@@ -212,7 +211,7 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
     unawaited(_applyVolume());
 
     void eventListener(VideoEvent event) {
-      log("EVENT LISTENER: ${event.eventType}",name: "EventListener");
+      // log("EVENT LISTENER: ${event.eventType}",name: "EventListener");
       if (_isDisposed) {
         return;
       }
