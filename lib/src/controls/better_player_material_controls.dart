@@ -428,7 +428,7 @@ class _BetterPlayerMaterialControlsState
     return _buildHitAreaClickableButton(
       icon: Icon(
         _controlsConfiguration.skipBackIcon,
-        size: 40,
+        size: 30,
         color: _controlsConfiguration.iconsColor,
       ),
       onClicked: skipBack,
@@ -439,7 +439,7 @@ class _BetterPlayerMaterialControlsState
     return _buildHitAreaClickableButton(
       icon: Icon(
         _controlsConfiguration.skipForwardIcon,
-        size: 40,
+        size: 30,
         color: _controlsConfiguration.iconsColor,
       ),
       onClicked: skipForward,
@@ -452,14 +452,14 @@ class _BetterPlayerMaterialControlsState
       icon: isFinished
           ? Icon(
               Icons.replay,
-              size: 50,
+              size: 45,
               color: _controlsConfiguration.iconsColor,
             )
           : Icon(
               controller.value.isPlaying
                   ? _controlsConfiguration.pauseIcon
                   : _controlsConfiguration.playIcon,
-              size: 50,
+              size: 45,
               color: _controlsConfiguration.iconsColor,
             ),
       onClicked: () {

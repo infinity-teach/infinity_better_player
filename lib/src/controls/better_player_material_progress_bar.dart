@@ -251,7 +251,7 @@ class _ProgressBarPainter extends CustomPainter {
     );
     canvas.drawCircle(
       Offset(playedPart, size.height / 2 + height / 2),
-      height * 2,
+      height *1.5 ,
       colors.handlePaint,
     );
   }
