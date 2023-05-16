@@ -20,6 +20,7 @@ class BetterPlayerMaterialClickableWidget extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       color: Colors.transparent,
       child: InkWell(
+        onDoubleTap: onTap,
         highlightColor: Colors.grey.withOpacity(0.3), // Set the highlight color
         splashColor: Colors.grey.withOpacity(0.4), // Set the splash color
         onTap: onTap,
