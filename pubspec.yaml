@@ -15,7 +15,11 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.5
-  wakelock: ^0.6.2
+  wakelock:
+    git:
+      url: https://github.com/infinity-teach/custom_wavelock.git
+      path: wakelock
+
   meta: ^1.8.0
   flutter_widget_from_html_core: ^0.10.0
   visibility_detector: ^0.4.0+2
