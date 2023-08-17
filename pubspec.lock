@@ -241,10 +241,10 @@ packages:
     dependency: transitive
     description:
       name: platform
-      sha256: "4a451831508d7d6ca779f7ac6e212b4023dd5a7d08a27a63da33756410e32b76"
+      sha256: "57c07bf82207aee366dfaa3867b3164e4f03a238a461a11b0e8a3a510d51203d"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "3.1.1"
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -327,37 +327,45 @@ packages:
     description:
       path: wakelock
       ref: HEAD
-      resolved-ref: "35b3916cd1d45197dfa9e23ce897a98d26a78d05"
+      resolved-ref: d8bb2c024c223c12a23eaf7101bbcadb7462e159
       url: "https://github.com/infinity-teach/custom_wavelock.git"
     source: git
     version: "0.8.0"
   wakelock_macos:
     dependency: transitive
     description:
-      path: "../../../.pub-cache/git/custom_wavelock-35b3916cd1d45197dfa9e23ce897a98d26a78d05/wakelock_macos"
-      relative: true
-    source: path
+      path: wakelock_macos
+      ref: HEAD
+      resolved-ref: d8bb2c024c223c12a23eaf7101bbcadb7462e159
+      url: "https://github.com/infinity-teach/custom_wavelock.git"
+    source: git
     version: "0.8.0"
   wakelock_platform_interface:
     dependency: transitive
     description:
-      path: "../../../.pub-cache/git/custom_wavelock-35b3916cd1d45197dfa9e23ce897a98d26a78d05/wakelock_platform_interface"
-      relative: true
-    source: path
+      path: wakelock_platform_interface
+      ref: HEAD
+      resolved-ref: d8bb2c024c223c12a23eaf7101bbcadb7462e159
+      url: "https://github.com/infinity-teach/custom_wavelock.git"
+    source: git
     version: "0.8.0"
   wakelock_web:
     dependency: transitive
     description:
-      path: "../../../.pub-cache/git/custom_wavelock-35b3916cd1d45197dfa9e23ce897a98d26a78d05/wakelock_web"
-      relative: true
-    source: path
+      path: wakelock_web
+      ref: HEAD
+      resolved-ref: d8bb2c024c223c12a23eaf7101bbcadb7462e159
+      url: "https://github.com/infinity-teach/custom_wavelock.git"
+    source: git
     version: "0.8.0"
   wakelock_windows:
     dependency: transitive
     description:
-      path: "../../../.pub-cache/git/custom_wavelock-35b3916cd1d45197dfa9e23ce897a98d26a78d05/wakelock_windows"
-      relative: true
-    source: path
+      path: wakelock_windows
+      ref: HEAD
+      resolved-ref: d8bb2c024c223c12a23eaf7101bbcadb7462e159
+      url: "https://github.com/infinity-teach/custom_wavelock.git"
+    source: git
     version: "0.8.0"
   win32:
     dependency: transitive
